@@ -3,10 +3,10 @@ print("\n2.Треугольник существует только тогда, 
 
 res = ""
 a,b,c = map(int,input("Введите стороны треугольника a,b и c, разделенные знаком пробела : ").split(" ",2))
-print(type(a))
-print(b)
-print(a,b,c)
-if a==0 or b==0 or c==0 or a+b<c or a+c<b or b+c<a:
+# print(type(a))
+# print(b)
+# print(a,b,c)
+if a==0 or b==0 or c==0 or a+b<=c or a+c<=b or b+c<=a:
 #if (a or b or c)==0 or a+b<c or a+c<b or b+c<a:
 	res = "Треугольника не существует"
 elif a==b==c:
@@ -15,4 +15,4 @@ elif a==b or b==c or a==c:
 	res = "Треугольник равнобедренный" 
 else:
 	res = "Треугольник разносторонний"
-print("1",res)
+print(res)
